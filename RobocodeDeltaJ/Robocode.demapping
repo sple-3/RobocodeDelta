@@ -33,3 +33,12 @@ NearestEnemy:
 
 LockRadar:
 <decore/LockRadar.decore>
+
+RandomTarget:
+<decore/RandomTarget.decore>
+
+SniperGun:
+<decore/SniperGun.decore>
+
+ZigZagMovement:
+<decore/ZigZagMovement.decore>

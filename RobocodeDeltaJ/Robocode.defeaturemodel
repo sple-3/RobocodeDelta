@@ -10,16 +10,18 @@
         </groups>
       </features>
       <features minCardinality="1" maxCardinality="1" name="Movement">
-        <groups maxCardinality="3">
+        <groups maxCardinality="4">
           <features maxCardinality="1" name="NoMovement"/>
           <features maxCardinality="1" name="MoveBackward"/>
           <features maxCardinality="1" name="CircularMovement"/>
+          <features maxCardinality="1" name="ZigZagMovement"/>
         </groups>
       </features>
       <features minCardinality="1" maxCardinality="1" name="Targeting">
-        <groups maxCardinality="2">
+        <groups maxCardinality="3">
           <features maxCardinality="1" name="MouseTargeting"/>
           <features maxCardinality="1" name="LinearTargeting"/>
+          <features maxCardinality="1" name="RandomTarget"/>
         </groups>
       </features>
       <features minCardinality="1" maxCardinality="1" name="SelectEnemy">
@@ -29,9 +31,10 @@
         </groups>
       </features>
       <features minCardinality="1" maxCardinality="1" name="Gun">
-        <groups maxCardinality="2">
+        <groups maxCardinality="3">
           <features maxCardinality="1" name="MouseClickGun"/>
           <features maxCardinality="1" name="AutoFireGun"/>
+          <features maxCardinality="1" name="SniperGun"/>
         </groups>
       </features>
     </groups>
