@@ -1,0 +1,34 @@
+package jab.module;
+
+/**
+ * Radar
+ * 
+ * @author jab
+ */
+public class Radar extends Part {
+
+	public Module bot;
+
+	public Radar(Module bot) {
+		this.bot = bot;
+	}
+
+	public void scan() {
+		if (bot.enemy != null) {
+			double dx = bot.enemy.x - bot.getX();
+			double dy = bot.enemy.y - bot.getY();
+			double angle = Math.atan2(dx, dy);
+			if (angle < 0)
+				angle += 2 * Math.PI;
+			double radarAngle = angle - bot.getRadarHeadingRadians();
+			while (radarAngle > Math.PI)
+				radarAngle -= 2 * Math.PI;
+			while (radarAngle < -Math.PI)
+				radarAngle += 2 * Math.PI;
+			bot.setTurnRadarRightRadians(2.0 * radarAngle);
+		} else {
+			bot.setTurnRadarRightRadians(Double.POSITIVE_INFINITY);
+		}
+	}
+
+}
