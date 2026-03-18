@@ -30,3 +30,6 @@ AutoFireGun:
 
 NearestEnemy:
 <decore/NearestEnemy.decore>
+
+LockRadar:
+<decore/LockRadar.decore>
