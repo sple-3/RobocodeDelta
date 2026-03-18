@@ -1,0 +1,12 @@
+delta ZigZagMovement {
+	modifies jab.module.Movement {
+	
+		modifies move() {
+			if (bot.getDistanceRemaining() == 0) {
+				bot.setAhead(100);
+				bot.setTurnRight(45);
+			}
+		}
+		
+	}
+}

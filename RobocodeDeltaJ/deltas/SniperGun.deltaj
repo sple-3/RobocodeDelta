@@ -1,0 +1,11 @@
+delta SniperGun {
+	modifies jab.module.Gun {
+	
+		modifies fire() {
+			if (bot.enemy != null && bot.getGunHeat() == 0) {
+				bot.setFire(3.0);
+			}
+		}
+		
+	}
+}
