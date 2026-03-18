@@ -18,3 +18,12 @@ WeakestSelectEnemy:
 
 MouseClickGun:
 <decore/MouseClickGun.decore>
+
+ZigZagMovement:
+<decore/ZigZagMovement.decore>
+
+SniperGun:
+<decore/SniperGun.decore>
+
+RandomTarget:
+<decore/RandomTarget.decore>
