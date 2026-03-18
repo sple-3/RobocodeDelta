@@ -1,0 +1,13 @@
+delta RandomTarget {
+	modifies jab.module.SelectEnemy {
+	
+		modifies select() {
+			if (!bot.botsInfo.isEmpty()) {
+				java.util.Vector<jab.module.BotInfo> enemyList = new java.util.Vector<jab.module.BotInfo>(bot.botsInfo.values());
+				int randomIndex = (int) (Math.random() * enemyList.size());
+				bot.enemy = enemyList.get(randomIndex);
+			}
+		}
+		
+	}
+}
