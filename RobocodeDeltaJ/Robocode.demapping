@@ -3,3 +3,18 @@ NoMovement:
 
 SpinningRadar:
 <decore/SpinningRadar.decore>
+
+MoveBackward:
+<decore/Backward.decore>
+
+MouseRadar:
+<decore/MouseRadar.decore>
+
+MouseTargeting:
+<decore/MouseTargeting.decore>
+
+WeakestSelectEnemy:
+<decore/Weakest.decore>
+
+MouseClickGun:
+<decore/MouseClickGun.decore>

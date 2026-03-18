@@ -1,0 +1,24 @@
+delta MouseClickGun {
+    modifies jab.module.Gun {
+    
+        modifies fire() {
+            if (bot.bulletPower > 0 && bot.getGunHeat() == 0) {
+                robocode.Bullet b = bot.setFireBullet(bot.bulletPower);
+                bot.registerBullet(b);
+            }
+        }
+        
+        modifies listenInput(java.awt.event.InputEvent e) {
+            if (e instanceof java.awt.event.MouseEvent)
+                if (e.getID() == java.awt.event.MouseEvent.MOUSE_PRESSED)
+                    if (((java.awt.event.MouseEvent) e).getButton() == java.awt.event.MouseEvent.BUTTON3)
+                        bot.bulletPower = 3;
+                    else if (((java.awt.event.MouseEvent) e).getButton() == java.awt.event.MouseEvent.BUTTON2)
+                        bot.bulletPower = 2;
+                    else
+                        bot.bulletPower = 1;
+            if (e.getID() == java.awt.event.MouseEvent.MOUSE_RELEASED)
+                bot.bulletPower = 0;
+        }
+    }
+}
