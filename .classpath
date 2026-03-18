@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="RobocodeDeltaJ/src"/>
+	<classpathentry kind="src" path="Variant1/src"/>
+	<classpathentry kind="lib" path="RobocodeDeltaJ/robocode/libs/robocode.jar"/>
+	<classpathentry kind="lib" path="RoboRobo/build/jab.ModuleBot_1.jar"/>
+	<classpathentry kind="lib" path="RoboRobo/build/jab.ModuleTeam_1.jar"/>
+	<classpathentry kind="lib" path="RoboRobo/robocode/libs/robocode.jar"/>
+	<classpathentry kind="lib" path="Variant1/libraries/robocode.jar"/>
+	<classpathentry kind="output" path="RobocodeDeltaJ/bin"/>
+</classpath>

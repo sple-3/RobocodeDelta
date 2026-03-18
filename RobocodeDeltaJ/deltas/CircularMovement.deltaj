@@ -1,0 +1,15 @@
+delta CircularMovement {
+    modifies jab.module.Movement {
+        adds double direction = 1;
+        adds int moveCounter = 0;
+
+        modifies move() {
+            moveCounter++;
+            if (moveCounter % 30 == 0) {
+                direction = -direction;
+            }
+            bot.setAhead(150 * direction);
+            bot.setTurnRightRadians(0.3 * direction);
+        }
+    }
+}

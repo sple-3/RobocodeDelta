@@ -1,0 +1,30 @@
+package jab.module;
+
+/**
+ * Select enemy
+ * 
+ * @author jabier.martinez
+ */
+public class SelectEnemy extends Part {
+
+	public Module bot;
+
+	public SelectEnemy(Module bot) {
+		this.bot = bot;
+	}
+
+	public void select() {
+		java.util.Iterator<jab.module.BotInfo> iterator = bot.botsInfo.values().iterator();
+		double minDistance = Double.MAX_VALUE;
+		jab.module.BotInfo selected = null;
+		while (iterator.hasNext()) {
+			jab.module.BotInfo e = iterator.next();
+			if (!e.teammate && minDistance > e.distance) {
+				selected = e;
+				minDistance = e.distance;
+			}
+		}
+		bot.enemy = selected;
+	}
+
+}

@@ -18,3 +18,15 @@ WeakestSelectEnemy:
 
 MouseClickGun:
 <decore/MouseClickGun.decore>
+
+CircularMovement:
+<decore/CircularMovement.decore>
+
+LinearTargeting:
+<decore/LinearTargeting.decore>
+
+AutoFireGun:
+<decore/AutoFireGun.decore>
+
+NearestEnemy:
+<decore/NearestEnemy.decore>
